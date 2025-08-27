@@ -1,0 +1,41 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: rgb(1, 1, 33);
+    color: whitesmoke;
+}
+
+nav{
+    font-size: 2rem;
+    background-color: rgba(1, 158, 1, 0.247);
+    -webkit-text-fill-color: goldenrod;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    padding: .5rem;
+}
+
+a {
+    color: goldenrod;
+}
+
+.div_txt_large {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    align-self: center;
+    font-size: x-large;
+}
+.div_biog{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    align-self: center;
+    font-size: large;
+}
