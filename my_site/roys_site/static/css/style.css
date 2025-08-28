@@ -32,10 +32,10 @@ a {
     align-self: center;
     font-size: x-large;
 }
-.div_biog{
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-top: 1rem;
+.biog_div {
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-bottom: 1rem;
     align-self: center;
     font-size: large;
 }
