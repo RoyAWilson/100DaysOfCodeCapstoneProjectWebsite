@@ -5,5 +5,11 @@
 {% endblock title %}
 
 {% block content %}
-    <h1>Add CV Details Here</h1>
+    <h1>My Curriculum Vitae</h1>
+    <h2 style="text-align: center">Please Click a Link for Description:</h2>
+    <article>
+        {% for job in jobs %}
+            <h3>{{ job.job_title }}</h3>
+        {% endfor %}
+    </article>
 {% endblock content %}

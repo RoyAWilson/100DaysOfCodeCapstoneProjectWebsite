@@ -1,6 +1,8 @@
 from django.shortcuts import render
+from .models import Jobs
 
-# Create your views here.
+# Create your views here
 
 def cv_page(request):
-    return render(request, "cv_page.html")
+    job = Jobs.objects.all().order_by("job_title")
+    return render(request, "cv_page.html", {"jobs": job})
