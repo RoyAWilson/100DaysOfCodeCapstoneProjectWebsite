@@ -6,8 +6,8 @@
 
 {% block content %}
     <h1>{{ job.job_title }}</h1>
-    <img src="{{ job.picture }}" alt="{{ job.job_title }}">
-    <p>
+        <img src="{{ job.picture.url }}" alt="{{ job.job_title }}", class="picture">
+    <p style="font-size: large">
         {{ job.duties }}
     </p>
 {% endblock content %}
