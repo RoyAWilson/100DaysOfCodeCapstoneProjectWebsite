@@ -27,6 +27,7 @@ urlpatterns = [
     path("about/", views.about, name="about"),
     path("biography/", views.biography, name="biography"),
     path("my_cv/", include("my_cv.urls")),
+    path("my_portfolio/", include("my_portfolio.urls")),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

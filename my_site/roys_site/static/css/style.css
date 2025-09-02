@@ -63,3 +63,9 @@ article {
     height: 100%;
     max-height: 500px;
 }
+
+.pfolio_imgs {
+    display: block;
+    width: 35%;
+    height: 500px;
+}
