@@ -1,12 +1,19 @@
 {% extends "base.html" %}
 
 {% block title %}
-    My Portfolio
+    <title>My Portfolio</title>
 {% endblock title %}
 
 {% block content %}
-<h1>My Portfolio Page</h1>
+<h1>Portfolio</h1>
 <div>
-    
+    {% for folio in portfolio %}
+        <h2 class="proj_h2">{{ folio.project_title }} {{ folio.date_completed}}</h2>
+        <div class="proj_div">
+            <img src="{{ folio.project_img.url }}" alt="{{ folio.project_title}}">
+        </div>
+        <h3>Description:</h3>
+        <p class="proj_p">{{ folio.Project_desc }}</p>
+    {% endfor %}
 </div>
 {% endblock content %}
